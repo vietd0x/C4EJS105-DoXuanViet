@@ -74,3 +74,43 @@ console.log('_______8.2________');
 console.log(`Now my biggest sheep has size ${Math.max(...sheepSize)}, let's shave it`);
 console.log('_______8.3________');
 console.log("After shearing, here is my flock");
+sheepSize[sheepSize.indexOf(Math.max(...sheepSize))] = 8;
+console.log(...sheepSize);
+console.log('_______8.4________');
+console.log('\nMONTH 1\nOne month has, passed, my sheeps have grown, here are their sizes');
+let NumofSheep = sheepSize.length;
+for(let i = 0; i < NumofSheep; ++i)
+    sheepSize[i] += 50;
+console.log(...sheepSize);
+console.log('_______8.5________');
+let month = 2;
+while(month < 4)
+{
+    console.log(`\nMONTH ${month}\nOne month has, passed, my sheeps have grown, here are their sizes`);
+    let NumofSheep = sheepSize.length;
+    for(let i = 0; i < NumofSheep; ++i)
+        sheepSize[i] += 50;
+    console.log(...sheepSize);
+    ++month;
+    console.log(`\nNow my biggest sheep has size ${Math.max(...sheepSize)}, let's shave it`);
+    console.log("After shearing, here is my flock");
+    sheepSize[sheepSize.indexOf(Math.max(...sheepSize))] = 8;
+    console.log(...sheepSize);
+}
+
+console.log('_______8.6________');
+NumOfSheep = sheepSize.length;
+let totalSize  = 0;
+for(let i = 0; i < NumOfSheep; ++i)
+    totalSize += sheepSize[i];
+console.log(`My flock has size in total: ${totalSize}`);
+console.log(`I would get ${totalSize} * 25 = ${totalSize * 25}`);
+
+//_____________________10_____________
+let seqOfName = prompt("Enter a sequence of names");
+let nameList = seqOfName.split(', ');
+n = nameList.length;
+for(let i = 0; i < n; ++i)
+{
+    alert()
+}
