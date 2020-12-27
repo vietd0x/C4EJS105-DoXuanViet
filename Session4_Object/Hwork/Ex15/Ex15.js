@@ -936,8 +936,7 @@ for(let i of jobData.hits)
 
 console.log("___________15.2_________");
 console.log("first job hit");
-for(let i in jobData.hits[0])
-    console.log(jobData.hits[i]);
+console.log(jobData.hits[0]);
 
 console.log("___________15.3_________");
 console.log("First job title:");
@@ -956,7 +955,20 @@ console.log(`- ${bv1}\n- ${bv2}\n- ${bv3}`);
 console.log("___________15.6_________");
 for(let i in jobData.hits)
 {
-    let {jobTitle, benefits:[{benefitValue: b1}, {benefitValue: b2}, {benefitValue: b3}]} = jobData.hits[i];
-    console.log(`${jobTi}\nBenefits:\n- ${b1}\n- ${b2}\n- ${b3}`);
+    let {jobTitle} = jobData.hits[i];
+    console.log(`${jobTitle}`);
+    console.log("Benefits:")
+    for(let j in jobData.hits[i].benefits)
+    {
+        let bv = jobData.hits[i].benefits[j].benefitValue;
+        console.log(`- ${bv}`);
+    }
     console.log("__________________");
+}
+
+console.log("___________15.7_________");
+for(let i in jobData.hits)
+{
+    let {jobTitle, locations, skills, jobSalary} = jobData.hits[i];
+    console.log(`${jobTitle}\n${locations}\n${skills}\n${jobSalary}`); 
 }
