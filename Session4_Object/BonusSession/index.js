@@ -41,12 +41,15 @@ const movies = [
     },
 ]
 let group_by_genre = {}
-                        //updating...
+
 for(let obj of movies)
 {
     if(group_by_genre[obj.genre])
         group_by_genre[obj.genre].push(obj);
     else   
+    {
         group_by_genre[obj.genre] = [];
+        group_by_genre[obj.genre].push(obj);
+    }
 }
 console.log(group_by_genre);
