@@ -1,0 +1,38 @@
+/*____1____*/
+/* p{
+    color: red;
+}; */
+
+/*____2____*/
+/* div{
+    background-color: #00ff00;
+} */
+
+/*____3____*/
+/* #font-side-24{
+    font-size: 20px;
+} */
+
+/*____4____*/
+/* div{
+    font-size: 3em;
+    background: wheat
+  } */
+
+/*____5____*/
+/* #div2{
+    color:blue;
+} */
+
+/*____7____*/
+/* ul li{
+    font-weight: bold;
+} */
+
+/*____9____*/
+div.item >span{
+    font-size: 18;
+}
+div.item div span{
+    font-style: italic;
+}
