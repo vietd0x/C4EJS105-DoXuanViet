@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freakingmath cùi mía ver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id = 'start_btn' onClick="startBtn()">Start</button>
+
+    <!-- main content game -->
+    <div class = "main">
+        <!-- time-bar -->
+        <div id="totalTime" class="content-time">
+            <span class="title"></span>
+            <div id="bar-area">
+            </div>
+        </div>
+
+        <!-- score-board -->
+        <div class="result" id="game_score">
+            <input type="text" id="score" name="score" value="1" disabled>
+        </div>
+
+        <!-- equation -->
+        <div class="sum">
+            <p><span id="sum1"></span> + <span id="sum2"></span> = <span id="resultrandom"></span></p>
+        </div>
+
+        <!-- button -->
+        <div class="buttons">
+            <button id="wrong">✖</button>
+            <button id="right">✔</button>
+        </div>  
+    </div>
+    <div id="endGame">
+        <span>You Lose, F5 to play again</span>
+    </div>
+
+    <!-- _____________________________________________________________________ -->
+    <script src="index.js"></script>
+</body>
+</html>
