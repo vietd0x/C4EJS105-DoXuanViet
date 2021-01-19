@@ -8,18 +8,25 @@
 </head>
 <body>
     <div class = 'main' style="display:block">
+        <!-- time bar -->
         <div id = 'totalTime' class = 'content-time' style="display: block;">
             <span class = 'title'></span>
             <div id = 'bar-area'>
                 <progress value="1" max = "100"></progress>
             </div>
         </div>
+
+        <!-- score -->
         <div class = 'result' id = 'game_score' style = 'display: block;'>
             <input type = 'text' id = 'score' name = 'score' value="1" disabled>
         </div>
+
+        <!-- question -->
         <div class = 'sum'>
             <p><span id="sum1"></span> + <span id="sum2"></span> = <span id="resultrandom"></span></p>
         </div>
+        
+        <!-- button -->
         <div class="buttons">
             <button id="wrong">✖</button>
             <button id="right">✔</button>
